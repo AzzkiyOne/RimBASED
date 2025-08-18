@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs
+            /ThingDef[defName="VRE_BurnBarrel"]
+        </xpath>
+        <value>
+            <minifiedDef>MinifiedThing</minifiedDef>
+            <thingCategories>
+                <li>BuildingsMisc</li>
+            </thingCategories>
+        </value>
+    </Operation>
+
+    <!-- Mass -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs
+            /ThingDef[defName="VRE_BurnBarrel"]
+            /statBases
+        </xpath>
+        <value>
+            <Mass>10</Mass>
+        </value>
+    </Operation>
+
+</Patch>

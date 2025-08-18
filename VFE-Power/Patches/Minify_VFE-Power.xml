@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs
+            /ThingDef[
+                defName="VFE_IndustrialWoodFiredGenerator"
+                or defName="VFE_IndustrialChemfuelPoweredGenerator"
+                or defName="VFE_TidalGenerator"
+                or defName="VFE_AdvancedSolarGenerator"
+            ]
+        </xpath>
+        <value>
+            <minifiedDef>MinifiedThing</minifiedDef>
+            <thingCategories>
+                <li>BuildingsPower</li>
+            </thingCategories>
+        </value>
+    </Operation>
+
+    <!-- Mass -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs
+            /ThingDef[
+                defName="VFE_IndustrialWoodFiredGenerator"
+                or defName="VFE_IndustrialChemfuelPoweredGenerator"
+                or defName="VFE_TidalGenerator"
+                or defName="VFE_AdvancedSolarGenerator"
+            ]
+            /statBases
+        </xpath>
+        <value>
+            <Mass>40</Mass>
+        </value>
+    </Operation>
+
+</Patch>

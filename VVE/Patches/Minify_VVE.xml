@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>
+            Defs
+            /ThingDef[defName="VVE_GarageBench"]
+            /minifiedDef
+        </xpath>
+    </Operation>
+
+    <!-- Category -->
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>
+            Defs
+            /ThingDef[defName="VVE_GarageBench"]
+            /thingCategories
+        </xpath>
+    </Operation>
+    
+    <!-- Mass -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs
+            /ThingDef[defName="VVE_GarageBench"]
+            /statBases
+        </xpath>
+        <value>
+            <Mass>40</Mass>
+        </value>
+    </Operation>
+
+</Patch>

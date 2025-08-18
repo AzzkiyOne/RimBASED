@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+    <packageId>Azzkiy.RimBASED</packageId>
+    <name>RimBASED</name>
+    <author>Azzkiy</author>
+    <description>Assorted collection of:\n\n- Absolutely\n- Unfathomably\n- 100%\n- BASED\n\ncore/DLC/mod patches.</description>
+    <supportedVersions>
+        <li>1.6</li>
+    </supportedVersions>
+</ModMetaData>

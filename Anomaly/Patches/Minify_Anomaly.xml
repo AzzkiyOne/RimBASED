@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs
+            /ThingDef[
+                defName="AtmosphericHeater"
+                or defName="BioferriteGenerator"
+            ]
+        </xpath>
+        <value>
+            <minifiedDef>MinifiedThing</minifiedDef>
+        </value>
+    </Operation>
+
+    <!-- Category -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs
+            /ThingDef[defName="AtmosphericHeater"]
+        </xpath>
+        <value>
+            <thingCategories>
+                <li>BuildingsMisc</li>
+            </thingCategories>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs
+            /ThingDef[defName="BioferriteGenerator"]
+        </xpath>
+        <value>
+            <thingCategories>
+                <li>BuildingsPower</li>
+            </thingCategories>
+        </value>
+    </Operation>
+
+    <!-- Mass -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs
+            /ThingDef[
+                defName="AtmosphericHeater"
+                or defName="BioferriteGenerator"
+            ]
+            /statBases
+        </xpath>
+        <value>
+            <Mass>40</Mass>
+        </value>
+    </Operation>
+
+</Patch>

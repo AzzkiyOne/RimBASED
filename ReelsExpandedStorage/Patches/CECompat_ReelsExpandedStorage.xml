@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>
+            Defs
+            /ThingDef[defName="ReelStorageBarrelPallet"]
+            /building
+            /fixedStorageSettings
+            /filter
+            /thingDefs
+        </xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>
+                Defs
+                /ThingDef[defName="ReelStorageBarrelPallet"]
+                /building
+                /fixedStorageSettings
+                /filter
+                /thingDefs
+            </xpath>
+            <value>
+                <li>Prometheum</li>
+                <li>FSX</li>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>
+            Defs
+            /ThingDef[defName="ReelStorageBarrelPallet"]
+            /building
+            /fixedStorageSettings
+            /filter
+            /categories
+        </xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>
+                Defs
+                /ThingDef[defName="ReelStorageBarrelPallet"]
+                /building
+                /fixedStorageSettings
+                /filter
+            </xpath>
+            <value>
+                <categories />
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs
+            /ThingDef[defName="ReelStorageBarrelPallet"]
+            /building
+            /fixedStorageSettings
+            /filter
+            /categories
+        </xpath>
+        <value>
+            <li>AmmoFlamethrower</li>
+        </value>
+    </Operation>
+
+</Patch>

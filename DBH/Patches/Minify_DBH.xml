@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs
+            /ThingDef[
+                defName="SolarHeater"
+                or defName="GeothermHeater"
+                or defName="WaterTowerS"
+                or defName="WaterTowerL"
+                or defName="WindPump"
+                or defName="PumpingStation"
+                or defName="SewageOutlet"
+                or defName="WaterTreatment"
+            ]
+        </xpath>
+        <value>
+            <minifiedDef>MinifiedThing</minifiedDef>
+        </value>
+    </Operation>
+
+    <!-- Category -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs
+            /ThingDef[
+                defName="SolarHeater"
+                or defName="GeothermHeater"
+            ]
+        </xpath>
+        <value>
+            <thingCategories>
+                <li>BuildingsTemperature</li>
+            </thingCategories>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs
+            /ThingDef[
+                defName="WaterTowerS"
+                or defName="WaterTowerL"
+                or defName="WindPump"
+                or defName="PumpingStation"
+                or defName="SewageOutlet"
+                or defName="WaterTreatment"
+            ]
+        </xpath>
+        <value>
+            <thingCategories>
+                <li>BuildingsMisc</li>
+            </thingCategories>
+        </value>
+    </Operation>
+
+    <!-- Mass -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs
+            /ThingDef[
+                defName="WaterTowerS"
+                or defName="WaterTowerL"
+                or defName="WindPump"
+                or defName="PumpingStation"
+                or defName="WaterTreatment"
+            ]
+            /statBases
+        </xpath>
+        <value>
+            <Mass>40</Mass>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs
+            /ThingDef[
+                defName="SolarHeater"
+                or defName="GeothermHeater"
+                or defName="SewageOutlet"
+            ]
+            /statBases
+        </xpath>
+        <value>
+            <Mass>10</Mass>
+        </value>
+    </Operation>
+
+</Patch>

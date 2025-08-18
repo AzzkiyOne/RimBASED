@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs
+            /ThingDef[defName="VNPE_NutrientPasteTap"]
+            /size
+        </xpath>
+        <value>
+            <size>(1,1)</size>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs
+            /ThingDef[defName="VNPE_NutrientPasteTap"]
+            /graphicData
+            /texPath
+        </xpath>
+        <value>
+            <texPath>Things/Building/NutrientPasteDripper/NutrientPasteDripper</texPath>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs
+            /ThingDef[defName="VNPE_NutrientPasteTap"]
+            /graphicData
+            /drawSize
+        </xpath>
+        <value>
+            <drawSize>(1,1)</drawSize>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs
+            /ThingDef[defName="VNPE_NutrientPasteTap"]
+            /graphicData
+        </xpath>
+        <value>
+            <shadowData>
+                <volume>(0.55, 0.30, 0.40)</volume>
+            </shadowData>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs
+            /ThingDef[defName="VNPE_NutrientPasteTap"]
+            /graphicData
+            /damageData
+        </xpath>
+        <value>
+            <damageData>
+                <rectN>(0.078125,0.46875,0.859375,0.53125)</rectN>
+                <rectS>(0.078125,0.46875,0.859375,0.53125)</rectS>
+                <rectE>(0.125,0.46875,0.625,0.296875)</rectE>
+                <rectW>(0.25,0.46875,0.625,0.296875)</rectW>
+                <cornerTR>Damage/Corner</cornerTR>
+            </damageData>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs
+            /ThingDef[defName="VNPE_NutrientPasteTap"]
+            /passability
+        </xpath>
+        <value>
+            <passability>PassThroughOnly</passability>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs
+            /ThingDef[defName="VNPE_NutrientPasteTap"]
+            /fillPercent
+        </xpath>
+        <value>
+            <fillPercent>0.2</fillPercent>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs
+            /ThingDef[defName="VNPE_NutrientPasteTap"]
+            /blockWind
+        </xpath>
+        <value>
+            <blockWind>false</blockWind>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs
+            /ThingDef[defName="VNPE_NutrientPasteTap"]
+            /statBases
+            /MaxHitPoints
+        </xpath>
+        <value>
+            <MaxHitPoints>100</MaxHitPoints>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs
+            /ThingDef[defName="VNPE_NutrientPasteTap"]
+            /statBases
+            /WorkToBuild
+        </xpath>
+        <value>
+            <WorkToBuild>6000</WorkToBuild>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs
+            /ThingDef[defName="VNPE_NutrientPasteTap"]
+            /statBases
+        </xpath>
+        <value>
+            <Mass>20</Mass>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs
+            /ThingDef[defName="VNPE_NutrientPasteTap"]
+            /statBases
+            /Flammability
+        </xpath>
+        <value>
+            <Flammability>0.7</Flammability>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs
+            /ThingDef[defName="VNPE_NutrientPasteTap"]
+            /building
+            /destroySound
+        </xpath>
+        <value>
+            <destroySound>BuildingDestroyed_Metal_Small</destroySound>
+        </value>
+    </Operation>
+
+</Patch>

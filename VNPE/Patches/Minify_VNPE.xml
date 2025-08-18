@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs
+            /ThingDef[
+                defName="VNPE_NutrientPasteGrinder"
+                or defName="VNPE_NutrientPasteTap"
+            ]
+        </xpath>
+        <value>
+            <minifiedDef>MinifiedThing</minifiedDef>
+            <thingCategories>
+                <li>BuildingsProduction</li>
+            </thingCategories>
+        </value>
+    </Operation>
+
+    <!-- Mass -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs
+            /ThingDef[defName="VNPE_NutrientPasteGrinder"]
+            /statBases
+        </xpath>
+        <value>
+            <Mass>40</Mass>
+        </value>
+    </Operation>
+
+</Patch>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<loadFolders>
+    <v1.6>
+        <li>Core</li>
+        <li IfModActive="Ludeon.Rimworld.Biotech">Biotech</li>
+		<li IfModActive="Ludeon.Rimworld.Anomaly">Anomaly</li>
+        <li IfModActive="Ludeon.Rimworld.Odyssey">Odyssey</li>
+        <li IfModActive="scpchemfuel.appliances">Appliances Expanded</li>
+        <li IfModActive="Dubwise.DubsBadHygiene">DBH</li>
+        <li IfModActive="VanillaExpanded.VFECore">VFE-Core</li>
+        <li IfModActive="VanillaExpanded.VFEPower">VFE-Power</li>
+        <li IfModActive="VanillaExpanded.VFEProduction">VFE-Production</li>
+        <li IfModActive="VanillaExpanded.VNutrientE">VNPE</li>
+        <li IfModActive="VanillaExpanded.VChemfuelE">VCE</li>
+        <li IfModActive="OskarPotocki.VanillaVehiclesExpanded">VVE</li>
+        <li IfModActive="OskarPotocki.VFE.Pirates">VFE-Pirates</li>
+        <li IfModActive="vanillaracesexpanded.waster">VRE-Waster</li>
+        <li IfModActive="reel.expanded.storage">ReelsExpandedStorage</li>
+    </v1.6>
+</loadFolders>

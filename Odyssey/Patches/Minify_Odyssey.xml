@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs
+            /ThingDef[
+                defName="ChemfuelTank"
+                or defName="LargeChemfuelTank"
+            ]
+        </xpath>
+        <value>
+            <minifiedDef Inherit="False" IsNull="False">MinifiedThing</minifiedDef>
+            <thingCategories Inherit="False" IsNull="False">
+                <li>BuildingsMisc</li>
+            </thingCategories>
+        </value>
+    </Operation>
+
+</Patch>

@@ -13,4 +13,13 @@
         </value>
     </Operation>
 
+    <Operation Class="PatchOperationRemove">
+        <xpath>
+            Defs
+            /ThingDef[defName="OrbitalScanner"]
+            /placeWorkers
+            /li[text()="PlaceWorker_NotUnderRoof"]
+        </xpath>
+    </Operation>
+
 </Patch>
